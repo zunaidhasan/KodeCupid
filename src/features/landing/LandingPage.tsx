@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ArrowRight, BadgeCheck, CalendarHeart, CalendarClock, Check, EyeOff, HeartHandshake, MailCheck, ShieldCheck, Sparkles } from "lucide-react";
-import heroImg from "@/assets/hero.jpg";
-import communityImg from "@/assets/community.jpg";
 import { Badge } from "@/components/ui/Badge";
 import { Button, buttonStyles } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
@@ -73,7 +71,7 @@ export function LandingPage() {
           </div>
 
           <div className="relative mx-auto w-full max-w-md lg:max-w-none">
-            <img src={heroImg} alt="Illustration of a nurse in scrubs and a teacher laughing together over coffee" className="w-full rounded-[2.5rem] object-cover shadow-card" />
+            <img src="/images/hero.jpg" alt="Illustration of a nurse in scrubs and a teacher laughing together over coffee" className="w-full rounded-[2.5rem] object-cover shadow-card" />
             <div className="absolute -left-3 top-8 animate-pop rounded-2xl bg-white p-3 shadow-card sm:-left-8">
               <p className="flex items-center gap-1.5 text-sm font-bold text-brand-800"><BadgeCheck className="h-4 w-4 fill-brand-600 text-white" aria-hidden />Verified professional</p>
               <p className="text-xs text-ink-mute">NPI confirmed</p>
@@ -144,7 +142,7 @@ export function LandingPage() {
 
       {/* HOW IT WORKS + COMMUNITY */}
       <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2" aria-labelledby="how">
-        <img src={communityImg} alt="Illustration of a nurse, teacher, scientist and professor standing together" className="w-full rounded-[2.5rem] object-cover shadow-card" loading="lazy" />
+        <img src="/images/community.jpg" alt="Illustration of a nurse, teacher, scientist and professor standing together" className="w-full rounded-[2.5rem] object-cover shadow-card" loading="lazy" />
         <div>
           <p className="text-sm font-semibold uppercase tracking-widest text-coral-600">How it works</p>
           <h2 id="how" className="mt-2 font-display text-3xl font-semibold tracking-tight sm:text-4xl">From “hello” to a coffee between shifts.</h2>
